@@ -23,11 +23,9 @@ module.exports = function leer(text) {
     var palabra = text.split(/\s+\n*/);
     if (caracterDePalabra != 0) {
         palabraAAnalizar = palabra[numeroDePalabra].substr(caracterDePalabra);
-        console.log(palabraAAnalizar);
         estado = 3;
     } else {
         var palabraAAnalizar = palabra[numeroDePalabra];
-        console.log(palabraAAnalizar);
     }
 
     numeroDePalabra++;

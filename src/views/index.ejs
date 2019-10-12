@@ -10,27 +10,27 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 </head>
 <body>
-    <%include partials/head.html%>
-    <input id='files' name='files' type='file' accept='.txt'>    
-    <a href='contact'>Datos personales</a>
-    <a href='diagrama'>Diagrama de Moore</a>
-    
-    <textarea rows="7" id="bbb"></textarea>
+    <%include partials/head.html%><br><br>
+<div class='container'>
+    <input id='files' name='files' type='file' accept='.txt' class='form-control'><br><br>       
+    <textarea rows="4" id="bbb" class='form-control' placeholder="Texto a ser analizado"></textarea><br><br>
 
-    <button id="recibidor" name='automata2'">recibidor</button>
-    <button id="posteador" name='automata3'">posteador</button>
-    
+    <button id="recibidor" name='automata2'" class='btn btn-primary mb-2'>recibidor</button>
+    <button id="posteador" name='automata3'" class='btn btn-primary mb-2'>posteador</button>
+    <br><br>
     <table class='table' id='actual'>
         <thead class='thead-dark'>
             <tr>
-                <th></th>
+                <th>Token:</th>
+                <th>Descripcion:</th>
+                <th>Numero:</th>
             </tr>
         </thead>
         <tbody>
 
         </tbody>
     </table>
-
+</div>
 
     <script src="/verificador.js"></script>
     <script src="/analizador.js"></script>

@@ -1,3 +1,4 @@
+//funcion que lee el archivo .txt
 function leerArchivo(e){
     var archivo = e.target.files[0];
     if(!archivo){
@@ -11,6 +12,7 @@ function leerArchivo(e){
     lector.readAsText(archivo);
 }
 
+//funcion que muestra el contenido del archivo dentro de un textarea
 function mostrarContenido(contenido){
     var elemento = document.getElementById('bbb');
     elemento.innerHTML = contenido;
