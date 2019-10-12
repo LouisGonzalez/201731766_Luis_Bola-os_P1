@@ -92,7 +92,7 @@ module.exports = function leer(text){
         }
         //si al final de todo el recorrido estado es 0 marcarlo como error
         if(estado == 0){
-            return ['Error', palabra, numeroDePalabra];
+            return ['Error', palabraAnalizar, numeroDePalabra];
         }
         if (i === palabraAnalizar.length - 1) {
             caracterDePalabra = 0;
