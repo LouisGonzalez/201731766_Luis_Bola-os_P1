@@ -105,13 +105,13 @@ module.exports = function leer(text){
 function finalizarPalabra(palabraAnalizar, estado, numeroDePalabra) {
     //si estado es 4 se marca como identificador
     if (estado == 4) {
-        return "Identificador";
+        return ['Identificador', palabraAnalizar, numeroDePalabra];
     //si estado es 5 se marca como error    
     } else if (estado == 5) {
-        return "Error";
+        return ["Error", palabraAnalizar, numeroDePalabra];
     //si estado es 6 se marca como flotante    
     } else if (estado == 6) {
-        return "Flotante"
+        return ['Flotante', palabraAnalizar, numeroDePalabra];
     } else {
         return regresar(palabraAnalizar, estado, numeroDePalabra);
 
